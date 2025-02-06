@@ -1,0 +1,55 @@
+1. PCA (Principal Component Analysis)
+PCA is a dimensionality reduction technique used to transform a dataset with many possibly correlated variables into a set of uncorrelated variables called principal components. These components are linear combinations of the original variables and are constructed so that:
+
+The first principal component (PC1) captures the maximum possible variance in the data.
+The second principal component (PC2) captures the maximum remaining variance under the constraint of being uncorrelated with PC1.
+And so on for subsequent components.
+
+Goals of PCA:
+-simplify data
+-reveal structure (identify patterns like clusters or trends)
+-improve visualization (less than 4D - plottable)
+
+
+2. EFA (Exploratory factor analysis)
+Factor Analysis is a statistical method used to uncover the latent structure (factors) in a set of observed variables. Unlike PCA—which is purely a data reduction technique—Factor Analysis posits that the observed correlations are driven by one or more underlying factors, plus some unique variance (error) specific to each observed variable.
+
+Goals of EFA:
+Identify latent constructs that explain the pattern of correlations.
+Reduce the number of variables by grouping those that share common variance.
+Provide insight into the underlying structure of the data.
+
+
+3. LDA (Linear Discriminant Analysis)
+Discriminant Analysis aims to find a linear combination (or several combinations) of predictor variables that best separates the groups or classes
+
+Goals of LDA:
+Classify Observations: Assign new observations to one of the known groups.
+Understand Group Differences: Identify which variables (or combinations thereof) contribute most to discriminating between groups.
+Reduce Dimensionality: Similar to PCA but with the focus on maximizing between-group variance relative to within-group variance.
+
+
+4. Cluster Analysis (Ward method)
+Cluster Analysis is an unsupervised learning technique used to group observations or data points into clusters such that:
+Observations within the same cluster are more similar to each other.
+Observations in different clusters are more dissimilar.
+This technique does not rely on predefined class labels but instead discovers the natural grouping within the data by measuring similarity or distance between data points. There are various methods for clustering, including hierarchical approaches (like Ward's method) and partitioning methods (such as k-means, although here the focus might be on hierarchical clustering and data-driven optimal partitions).
+
+Goals of Cluster analysis:
+Reveal Structure: Identify natural groupings or segments within the dataset.
+Discover Patterns: Uncover relationships and similarities among observations.
+Simplify Data: Reduce data complexity by summarizing similar observations into clusters.
+Enhance Visualization: Provide a clearer, low-dimensional representation of the data structure, making it easier to interpret and analyze.
+
+
+5. CCA (Canonical Correlation Analysis) 
+Canonical Correlation Analysis is a multivariate technique used to explore and quantify the relationships between two sets of variables. Its purpose is to determine how the two variable sets are related by finding linear combinations of each set that are maximally correlated with each other.
+
+Goals of CCA:
+Identify and quantify the interrelationships between the two sets of variables by finding the pairs of canonical variates that have the highest correlations.
+Extract Canonical Variates: Determine linear combinations that capture the shared variance between the two variable sets, helping to understand which aspects of one set are most strongly associated with aspects of the other.
+Evaluate Redundancy: Assess how much of the variance in one set can be explained by the variance in the other set. This often involves examining the canonical correlations and associated redundancy measures.
+Statistical Testing and Interpretation: Use tests (such as Bartlett’s test) to evaluate the significance of the canonical correlations, ensuring that the identified relationships are statistically robust.
+Visualization: Employ visual tools like correlation circles (biplots) and corelograms to display:
+The correlation between observed variables and the canonical variates.
+How the observations are distributed in the space defined by the canonical variates.
